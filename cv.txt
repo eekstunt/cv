@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\usepackage{multicol} % Used for itemizing items in multiple columns
+\usepackage{fontawesome}
+\usepackage[left=2cm,right=2cm,
+    top=1cm,bottom=1cm,bindingoffset=0cm]{geometry}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Evgenii} % Your first name
+\familyname{Korotaev} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Software Engineer}
+\extrainfo{%
+    \faGithub \space \href{https://github.com/eekstunt}{github.com/eekstunt} \\
+    \faLinkedin \space \href{https://www.linkedin.com/in/eekstunt/}{linkedin.com/eekstunt}}%
+\mobile{+7-910-502-98-44}
+%\address{D/83, Konark Karishma Building} {Judges Bungalow Rd, Vastrapur, Ahmedabad-380015}
+\email{eekstunt@gmail.com}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2016-2021}{BS in Computer Science}{Moscow Power Engineering Institute}{Moscow, Russia}{}{}
+
+%----------------------------------------------------------------------------------------
+%   EXPERIENCE SECTION
+%%----------------------------------------------------------------------------------------
+
+% \section{Internship}
+% \cventry{June-July'16}{Innovation Center}{Godrej \& Boyce Mfg. Co. Ltd}{}{}{
+% \begin{itemize}
+% 	\item Identified how can we make maintaining household cleanliness and hygiene a fun and engaging activity for a variety of users which enables them to save time while cleaning, cuts down on repetitive and mundane tasks and is ergonomic and reduces human effort through an ecosystem of cleaning products.
+%     \item Objective: Develop Smart products/technologies to support cleanliness and hygiene in the home environment.Studying the current technologies used to provide efficient cleaning.
+%     \item Prototyped a hand held cleaning device.
+% \end{itemize}
+% }
+
+%----------------------------------------------------------------------------------------
+%   PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Experience}
+%\vspace{-5mm}
+
+\cventry{Dec 2020- Present}{Expocontent}{Python Developer}{}{}{
+I'm working on platform for analysing social medias' data.
+\begin{itemize}
+\item Designed the API architecture of the service and writed it with using of \textbf{Django REST framework}
+\item Implemented CI/CD pipeline from scratch (\textbf{GitLab CI/CD)}
+\item Dramatically speeded up our app by deleting the bottlenecks in our asynchronous celery tasks
+\item Writed UI tests with Selenium
+\end{itemize}
+\newline Used \textbf{Python}, \textbf{Django}, \textbf{PostgreSQL}, \textbf{MongoDB}, \textbf{Docker}, \textbf{Celery}, \textbf{Selenium} and \textbf{RabbitMQ}.
+}
+
+\cventry{Dec 2018 - Nov 2020}{Je le veux}{Co-Founder and Python Developer}{}{}{
+Je le veux is a luxury clothing discount aggregator.
+\begin{itemize}
+	\item Designed the architecture of our main internal platform for content managing and business process analysis.
+    \item Integrated with more than 20 our global partners in order to getting data about products in stock, sales and UTM Tracking.
+    \item Integrated with facebook.com, vk.com and telegram.org and built our own crossposting service for sending content to several social networks at once.
+    \item Built Telegram bots which make an interaction with our internal platform for content makers easier.
+    \item Built recommendation system for user's feed which finds appropriate items taking into account all of our collected data. 
+\end{itemize}
+\newline Used \textbf{Python}, \textbf{Django}, \textbf{PostgreSQL}, \textbf{HTML}, \textbf{CSS}, \textbf{Pandas}, \textbf{numpy}, \textbf{matplotlib}, \textbf{scikit-learn}.
+\newline As a Co-Founder, gave numerous presentations of our project applying and mastering my soft skills in the process.
+}
+
+
+
+
+\section{Achievements}
+
+\cventry{}{1st place}{\href{https://www.admitad.com/}{Admitad Grants}}{}{}{
+The competition was organized by Admitad, is one of the largest global affiliate networks. My team presented the Je le veux project.
+}
+
+\cventry{}{Finalist}{\href{https://changellenge.com/event/moretech-vtb/#reg}{VTB More.Tech Hackathon}}{}{}{
+My team created an Android app for car model prediction which has own marketplace where people can buy a car on credit at a reduced rate.
+}
+
+\cventry{}{Completed courses}{Coursera.org, Stepik.org}{}{}{
+    \href{https://coursera.org/share/4773e1c5b6f0742a4e1fcb80cc23ce21}{Diving into Python} (Mail.ru and MIPT), \href{https://coursera.org/share/dcbc9a7db2d409e0cbd87b87da37723c}{Python for Data Analysis} (Mail.ru and MIPT), \href{https://www.coursera.org/learn/algorithmic-toolbox?specialization=data-structures-algorithms}{Algorithmic Toolbox} (San-Diego University), \href{https://www.coursera.org/learn/data-structures?specialization=data-structures-algorithms}{Data Structures} (San-Diego University), \href{https://www.coursera.org/account/accomplishments/verify/BKMD4ZDDJD5U?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course}{Math and Python for Data Analysis} (Yandex and MIPT), \href{https://stepik.org/cert/792300}{Introduction in Linux} (Bioinformatics Institute).
+}
+
+\section{Projects}
+
+\cventry{}{RegLang Calculator}{Contributor}{}{}{
+Contributed to the RegLang Calculator, a group university project \href{https://gitlab.com/appmat/students/reglang-calculator}{RegLang Calculator} providing regular language algorithms. 
+\begin{itemize}
+	\item Designed a set of formal grammar rules for transforming any regular language into the corresponding reverse language.
+\end{itemize}
+Used \textbf{Kotlin}.
+}
+\cventry{}{Pet Projects}{}{}{}{
+Developed many pet projects including \href{https://github.com/eekstunt/salefinder}{SaleFinder}, \href{https://github.com/eekstunt/aliseeker}{AliSeeker}, \href{https://github.com/eekstunt/slashback}{Slashback}, \href{https://github.com/eekstunt/Chess-Api}{ChessAPI}, \href{https://github.com/eekstunt/ASCII-Text-Signature}{ASCII-Text-Signature} and \href{https://github.com/eekstunt/Simple-Banking-System}{SimpleBank}.
+\begin{itemize}
+	\item Used \textbf{Java}, \textbf{Kotlin}, \textbf{Python}, \textbf{PHP}.
+\end{itemize}
+}
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
+
+
+
